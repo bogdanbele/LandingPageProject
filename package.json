@@ -1,0 +1,23 @@
+{
+  "name": "debitoor",
+  "version": "1.0.0",
+  "description": "Landing WebPage",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "latest"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-sass": "latest",
+    "gulp-coffee": "latest",
+    "gulp-uglify": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
