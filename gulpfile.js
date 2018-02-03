@@ -7,7 +7,6 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     connect = require('gulp-connect'),
     pug = require('gulp-pug');
-    plumber = require('gulp-plumber');
 
 
 
@@ -70,27 +69,32 @@ gulp.task('watch', function () {
     gulp.watch('scripts/*.js', ['js']);
     gulp.watch('styles/app.scss', ['sass']);
     gulp.watch('**/*.html', ['html']);
+    gulp.watch('**/*.pug', ['pug']);
 });
 
 // Live reload 
 gulp.task('connect', function () {
+    gulp.start('pug');
     connect.server({
         root: '.',
         livereload: true
-    })
+    });
+    
 });
 
 
 // ** pug **
-  gulp.task('pug', function() {
+gulp.task('pug', function () {
+
     gulp.src('includes/index.pug')
-    .pipe(pug({
-      pretty: true
-    }))
-    .pipe(pug().on('error', gutil.log))
-    .pipe(gulp.dest('./'))
-  });
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(pug().on('error', gutil.log))
+        .pipe(gulp.dest('./'))
+});
+
 
 // Default task to run all the processing
 // ** gulp ** 
-gulp.task('default', ['html', 'coffee', 'js', 'sass', 'pug', 'connect', 'watch']);
+gulp.task('default', ['html', 'coffee', 'js', 'sass', 'pug', 'connect', 'watch', "copy"]);

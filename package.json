@@ -2,7 +2,7 @@
   "name": "debitoor",
   "version": "1.0.0",
   "description": "Landing WebPage",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "gulp": "latest"
   },
