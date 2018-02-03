@@ -5,7 +5,9 @@ var gulp = require('gulp'),
     coffee = require('gulp-coffee'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    pug = require('gulp-pug');
+    plumber = require('gulp-plumber');
 
 
 
@@ -56,10 +58,10 @@ gulp.task('js', function () {
 
 
 // ** html **
-gulp.task('html', function() {
+gulp.task('html', function () {
     gulp.src(['**/*.html'])
-    .pipe(connect.reload())
-  });
+        .pipe(connect.reload())
+});
 
 
 // Watch
@@ -79,6 +81,16 @@ gulp.task('connect', function () {
 });
 
 
+// ** pug **
+  gulp.task('pug', function() {
+    gulp.src('includes/index.pug')
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(pug().on('error', gutil.log))
+    .pipe(gulp.dest('./'))
+  });
+
 // Default task to run all the processing
 // ** gulp ** 
-gulp.task('default', ['html', 'coffee', 'js', 'sass', 'connect', 'watch']);
+gulp.task('default', ['html', 'coffee', 'js', 'sass', 'pug', 'connect', 'watch']);
