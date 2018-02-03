@@ -8,3 +8,18 @@ h1 {
 	text-align: center;
 	color: $primary-color;
  }
+
+ #navigation{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+
+	 p {
+		 display: flex;
+		 width: 100px;
+	 }
+
+	 .white-text{
+		 color: white;
+	 }
+ }

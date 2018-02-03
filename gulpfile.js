@@ -10,10 +10,6 @@ var gulp = require('gulp'),
 
 
 
-
-
-
-
 // Move Index to distribution folder
 // ** copy **
 gulp.task('copy', function () {
