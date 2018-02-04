@@ -1,23 +1,33 @@
  button {
     display: flex;
-    color: $primary-color;
-    text-decoration:none;
-    padding:5px 10px;
-    @include border-radius(3px);
+    padding:12px 20px;
+    @include border-radius(2px);
     @include box-shadow(0, 1px, 4px, rgba(0, 0, 0, .6));
     border-style: none;
-    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+
+    p {
+        font-weight: $semi-bold;
+        pointer-events: none;
+    }
+   
    }
 
 .btn-accent {
     @include button-bg($accent-color);
+    color: $secondary-text;
  }
  
 .btn-disabled {
     @include button-bg($disabled-color);
+    color: $secondary-text;
  }
  
  .btn-black{
     @include button-bg(#000);
+    color: $secondary-text;
  }
  

@@ -1,0 +1,35 @@
+#landing-wraper{
+    display: flex;
+    width: 100vw;
+    position:absolute;
+    align-self: flex-start;
+    flex-direction: column;
+
+}
+
+.landing-splash{
+    display: flex;
+    flex-direction: column;
+    z-index:1;
+    height: 60vh;
+    background-image: url("/assets/hero_battlefront_2x.png");
+    background-position: center;
+    background-size: cover;
+    &:before {
+       height:60vh;
+       content: '';
+       position: absolute;
+       top: 80px;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       // Add gradient
+       @include fade();
+       pointer-events: none;
+       }
+       
+}
+
+.game-title{
+    
+}

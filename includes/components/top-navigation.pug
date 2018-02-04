@@ -1,8 +1,14 @@
 #navigation
-    .logo
-        .website-logo
-        .white-text Home
-    p Games Included
-    p Pricing 
-    +button("New User","#user")
-    +button("Login","#login")
+    .left-nav
+        .logo
+            .website-logo
+                img.nav-log(src="/assets/logo.svg" alt="Logo")
+            span.secondary-text
+                p Home
+        span
+            p Games Included
+        span
+            p Pricing
+    .right-nav
+            +button("New user","#user")
+            +button("Login","#login", "btn-disabled")

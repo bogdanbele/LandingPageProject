@@ -1,6 +1,6 @@
 // Font Weights
-
 $regular: 400;
+$semi-bold: 600;
 $bold: 700;
 
 // Font
@@ -13,6 +13,7 @@ $base-line-height: 1.4;
 @import "./modules/all";
 @import "./modules/colors";
 @import "./modules/mixins";
+
 
 
 

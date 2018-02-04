@@ -1,6 +1,4 @@
 mixin button(buttonTitle, link, extraClass)
     - extraClass = extraClass || 'btn-accent'
     button(class=extraClass href=link)
-        p= extraClass
-        if third = third
-            p #{third}
+        p= buttonTitle
