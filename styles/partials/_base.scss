@@ -1,2 +1,18 @@
-@import "./modules/_all.scss";
-@import "./modules/_colors.scss";
+// Font Weights
+
+$regular: 400;
+$bold: 700;
+
+// Font
+
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+@import "./modules/all";
+@import "./modules/colors";
+@import "./modules/mixins";
+
+
+

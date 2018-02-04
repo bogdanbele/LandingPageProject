@@ -63,7 +63,7 @@ gulp.task('html', function () {
 gulp.task('watch', function () {
     gulp.watch('scripts/hello.coffee', ['coffee']);
     gulp.watch('scripts/*.js', ['js']);
-    gulp.watch('styles/app.scss', ['sass']);
+    gulp.watch('**/*.scss', ['sass']);
     gulp.watch('**/*.html', ['html']);
     gulp.watch('**/*.pug', ['pug']);
 });

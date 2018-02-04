@@ -1,0 +1,23 @@
+ button {
+    display: flex;
+    color: $primary-color;
+    text-decoration:none;
+    padding:5px 10px;
+    @include border-radius(3px);
+    @include box-shadow(0, 1px, 4px, rgba(0, 0, 0, .6));
+    border-style: none;
+    
+   }
+
+.btn-accent {
+    @include button-bg($accent-color);
+ }
+ 
+.btn-disabled {
+    @include button-bg($disabled-color);
+ }
+ 
+ .btn-black{
+    @include button-bg(#000);
+ }
+ 
