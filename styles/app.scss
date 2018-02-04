@@ -1,12 +1,15 @@
 // Importing Modules 
 @import "partials/base";
 
-// Importing Partials
-@import "partials/index";
-@import "partials/footer";
-@import "partials/suggested-section";
-@import "partials/subscribe-section";
-@import "partials/landing-section";
-@import "partials/navigation";
 @import "partials/buttons";
 @import "partials/cards";
+
+// Importing Partials
+@import "partials/subscribe-section";
+@import "partials/index";
+@import "partials/footer";
+@import "partials/landing-section";
+@import "partials/navigation";
+
+@import "partials/suggested-section";
+

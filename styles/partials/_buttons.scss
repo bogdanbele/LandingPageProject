@@ -26,7 +26,7 @@
     color: $secondary-text;
  }
  
- .btn-black{
+ .btn-black-thin{
     @include button-bg($black);
     color: $secondary-text;
     border-style: solid;
@@ -35,6 +35,12 @@
     color: $accent-color;
     padding: 6px 12px;
     margin-right:20px;
+ }
 
+ .btn-accent-thin{
+    @include button-bg($accent-color);
+    color: $secondary-text;
+    padding: 6px 12px;
+    margin-right:20px;
  }
  

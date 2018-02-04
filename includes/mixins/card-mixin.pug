@@ -1,6 +1,6 @@
-mixin card(cardTitle, imageSrc, buttonTitle, buttonClass)
+mixin card(cardTitle, imageSrc, buttonTitle, buttonClass, svgLink)
     .card
         img.card-image(src=imageSrc)
         .card-bottom
             span.card-title= cardTitle 
-            +button(buttonTitle,"#subscribe", buttonClass)
+            +button(buttonTitle,"#subscribe", buttonClass, svgLink)

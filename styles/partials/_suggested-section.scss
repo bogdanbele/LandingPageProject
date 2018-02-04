@@ -1,7 +1,22 @@
 .suggested-section{
     display: flex;
     width:100vw;
-    height: 40vw;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.card-layout{
+    width:1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.suggested-title{
+    font-size: 2em;
+    font-weight: $bold;
+    color: $primary-text;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

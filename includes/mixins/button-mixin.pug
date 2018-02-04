@@ -1,4 +1,7 @@
-mixin button(buttonTitle, link, extraClass)
+mixin button(buttonTitle, link, extraClass, svgLink )
     - extraClass = extraClass || 'btn-accent'
+    - svgLink = svgLink || 'none'
     button(class=extraClass href=link)
+        if !(svgLink=='none')
+            img.svgIcon(src=svgLink)
         p= buttonTitle
