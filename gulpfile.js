@@ -75,7 +75,7 @@ gulp.task('connect', function () {
         root: '.',
         livereload: true
     });
-    
+
 });
 
 
@@ -93,4 +93,4 @@ gulp.task('pug', function () {
 
 // Default task to run all the processing
 // ** gulp ** 
-gulp.task('default', ['html', 'coffee', 'js', 'sass', 'pug', 'connect', 'watch', "copy"]);
+gulp.task('default', ['html', 'coffee', 'js', 'sass', 'pug', "copy", 'connect', 'watch']);

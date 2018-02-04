@@ -1,3 +1,6 @@
-mixin button(gametitle, link)
-    button.color-class
-        a(class!=attributes.class href=link)= gametitle
+mixin button(buttonTitle, link, extraClass)
+    - extraClass = extraClass || 'themeColors'
+    button(class='default-button' href=link extraClass = extraClass)
+        p= extraClass
+        if third = third
+            p #{third}
