@@ -27,7 +27,7 @@
  }
  
  .btn-black{
-    @include button-bg(#000);
+    @include button-bg($black-accent);
     color: $secondary-text;
  }
  
